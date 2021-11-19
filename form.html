@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="form.css">
+<head>
+  <meta charset = "UTF-8" />
+    <h1>Sign Up</h1>
+</head>
+  <body>
+      <form action="/" method="POST">
+        <div class="container">
+        <label for="name" Name>Name</label>
+        <input type="text" id="username" name="name" placeholder="your name" required />
+        <div>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email_input" placeholder="Your Email" required />
+          <div>
+        <label for="pass">password</label>
+        <input type="password" placeholder="passowrd" name="passowrd" id="pass" minlength="8" required />
+          </div>
+          <div>
+        <label for="confirm_password">confirm</label>
+   <input type="password" placeholder="Confirm Password" id="confirm_password" required />
+     </div>
+
+       <input class="GFG" id="signin" value="sign up" type="submit">
+
+</form>
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="form.js"></script>
+</html>

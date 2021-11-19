@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Animated Template</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+
+
+</head>
+<body class="text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <!-- Nav Left Side -->
+          <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+              <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="form.html">
+                <!-- Nav Title -->
+                Join Us
+              </a>
+              <!-- Hamburger Menu (Mobile) -->
+
+          </div>
+        <!-- Nav Right Side -->
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="https://www.instagram.com/aramco/">
+              <!-- Icon -->
+              <i class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg "></i>
+              <span class="lg:hidden inline-block ml-2">Share</span>
+            </a>
+          </li>
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="https://twitter.com/saudi_aramco?lang=en">
+              <!-- Icon -->
+              <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
+              <span class="lg:hidden inline-block ml-2">Tweet</span>
+            </a>
+          </li>
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#pablo">
+              <!-- Icon -->
+              <i class="lg:text-gray-300 text-gray-500 fab fa-facebook-f" text-lg leading-lg "></i>
+              <span class="lg:hidden inline-block ml-2">Star</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navigation -->
+
+  <!-- Splash Page -->
+  <main>
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+      <!-- Background Image -->
+      <div
+        class="absolute top-0 w-full h-full bg-center bg-cover"
+        style="Background: url(https://vid.alarabiya.net/images/2020/09/16/453cb3eb-997f-4028-97b3-220496faff38/453cb3eb-997f-4028-97b3-220496faff38_16x9_1200x676.JPG?width=1138)">
+        <!-- Overlay -->
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <!-- Text Over Main Background -->
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12" >
+              <h1 class="loop text-white font-semibold text-3xl" id="loop"></h1>
+              <h2 class="text-white font-semibold text-5xl"  data-aos="fade-up">
+               Aramco Company.
+             </h2>
+              <p class="mt-4 text-lg text-gray-300" data-aos="fade-right" data-aos-delay="1000">
+As of 2020, it is one of the largest companies in the world by revenue. Saudi Aramco has both the world's second-largest proven crude oil reserves, at more than 270 billion barrels (43 billion cubic metres), and largest daily oil production of all oil producing companies.              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- End of Splash Page -->
+
+    <!-- Services Section -->
+    <section class="pb-20 bg-gray-300 -mt-24">
+      <!-- 3 Card Section -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <!-- Card -->
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-down" data-aos-delay="1000">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <i class="fas fa-robot"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Corporate governance
+                  Good governance is at the core of how Saudi Aramco operates and is fundamental to sustainable success.</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-left" data-aos-delay="1500">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <i class="fas fa-atom"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold" > Social responsibility
+                  Everywhere Saudi Aramco operates, it participates in community outreach and development efforts.</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-down" data-aos-delay="2000">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400" >
+                  <!-- Icon -->
+                  <i class="fas fa-bolt" ></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold" >Environment and climate change
+                  Saudi Aramco understands the importance of managing precious natural resources.</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        <!-- Text Box and Card Container -->
+        <div class="flex flex-wrap items-center mt-32" >
+          <!-- Text Box Container -->
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            <!-- Text Box -->
+            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal" data-aos="zoom-in-down">
+              Social responsibility:
+              Everywhere Saudi Aramco operates, it participates in community outreach and development efforts.
+
+            </h3>
+
+          </div>
+
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto"  data-aos="zoom-in-up">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="data:image/jpeg;base64,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"
+
+
+                class="w-full align-middle rounded-t-lg"
+              />
+              <blockquote class="relative p-8 mb-4">
+                <!-- Making Polygon Shape in Card -->
+
+                  <polygon
+                    points="-30,95 583,95 583,65"
+                    class="text-orange-500 fill-current"
+                  ></polygon>
+
+              </blockquote>
+            </div>
+          </div>
+
+    </section>
+    <!-- End of Services Section -->
+
+    <!-- About Section -->
+    <section class="relative py-20">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);"
+
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <!-- Image -->
+            <img
+              alt="..."
+              class="max-w-full rounded-lg shadow-lg"
+              data-aos="zoom-in-down"
+              src="https://argaamplus.s3.amazonaws.com/fa358ecc-6f04-4f77-a215-e394c9389a8c.jpg"
+            />
+          </div>
+          <!-- Text Box Container-->
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-up">
+            <div class="md:pr-12">
+              <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                <!-- Icon -->
+                <i class="fas fa-rocket text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <p class="mt-4 text-lg leading-relaxed text-gray-600">
+            We will integrate our business across the hydrocarbon value chain to create impact, We want to maximize the value from every hydrocarbon molecule we produce. So, even as other petroleum companies are scaling back, we are steadily increasing our downstream capabilities. This involves building additional refining capacity, growing our global chemicals business, as well as our trading and marketing businesses.
+              </p>
+              <!-- List -->
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fas fa-fingerprint"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">
+                        Carefully crafted components
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fab fa-html5"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Amazing page examples</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="far fa-paper-plane"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Dynamic components</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Team Section -->
+    <section class="pt-20 pb-48">
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <!-- Text Box -->
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold" data-aos="zoom-out">Here are our heroes</h2>
+            <p class="text-lg leading-relaxed m-4 text-gray-600" data-aos="zoom-out-up">
+              According to the National Oceanic and Atmospheric
+              Administration, Ted, Scambos, NSIDClead scentist, puts the
+              potentially record maximum.
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap" >
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"data-aos="zoom-out-right">
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://randomuser.me/api/portraits/men/69.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Ryan Thompson</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Web Developer
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-dribbble"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"data-aos="zoom-out-left" data-aos-delay="1500">
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://randomuser.me/api/portraits/women/17.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Romina Hadid</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Marketing Specialist
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-google"></i>
+                  </button>
+                  <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"data-aos="zoom-out-right" data-aos-delay="2000">
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://randomuser.me/api/portraits/women/23.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Alexa Smith</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  UI/UX Designer
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-google"></i>
+                  </button>
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="zoom-out-left"  data-aos-delay="2500">
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://randomuser.me/api/portraits/women/36.jpg"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Jenna Kardi</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Founder and CEO
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-dribbble"></i>
+                  </button>
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-google"></i>
+                  </button>
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Team Section -->
+
+    <!-- Contact Section -->
+    <section class="pb-20 relative block bg-gray-900">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+
+        >
+          <polygon
+            class="text-gray-900 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap mt-12 justify-center">
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-medal text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Excelent Services
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-poll text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Grow your market
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-lightbulb text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="relative block py-24 lg:pt-0 bg-gray-900">
+      <!-- Container -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+              <div class="flex-auto p-5 lg:p-10">
+                <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                  Complete this form and we will get back to you in 24 hours.
+                </p>
+                <!-- Name -->
+                <div class="relative w-full mb-3 mt-8">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+                    Full Name
+                  </label
+                  ><input
+                    type="text"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Full Name"
+                    style="transition: all 0.15s ease 0s;"
+                  />
+                </div>
+                <!-- Email -->
+                <form action="hajarabdullah.b.com" method="POST" enctype="text/plain">
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+                    Email
+                  </label
+                  ><input
+                    type="email"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Email"
+                    style="transition: all 0.15s ease 0s;"
+                  />
+                </div>
+                <!-- Message -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+                    Message
+                  </label
+                  ><textarea
+                    rows="4"
+                    cols="80"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Type a message..."
+                  ></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="submit"
+                    value="submit"
+                    style="transition: all 0.15s ease 0s;"
+                  >
+                  <a href="www.gmail.com">
+                    Send Message
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</form>
+    <!-- End of Contact Section -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <!-- Making Polygon Shape in Background -->
+    <div
+      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px; transform: translateZ(0);"
+    >
+      <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-gray-300 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+    </div>
+    <!-- Section Container -->
+    <div class="container mx-auto px-4">
+      <!-- Text Box Container -->
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Find us on any of these platforms, we respond 1-2 business days.
+          </h5>
+          <!-- Social Media Buttons -->
+          <div class="mt-6">
+            <a href="https://twitter.com/saudi_aramco?lang=en" target="_blank"><i class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="https://www.facebook.com/creativetim" target="_blank"><i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          </div>
+        </div>
+      <!-- List Container -->
+      <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <!-- List 1 -->
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://www.creative-tim.com/presentation">About Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://blog.creative-tim.com">Blog</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://www.github.com/creativetimofficial">Github</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://www.creative-tim.com/bootstrap-themes/free">Free Products</a>
+                </li>
+              </ul>
+            </div>
+            <!-- List 2 -->
+            <div class="w-full lg:w-4/12 px-4">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT License</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://creative-tim.com/privacy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     href="https://creative-tim.com/contact-us">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Line Break -->
+      <hr class="my-6 border-gray-400" />
+      <!-- Footer Text -->
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+            Copyright © 2019 Tailwind Starter Kit by
+            <a
+              href="https://www.google.com/"
+              class="text-gray-600 hover:text-gray-900">Join us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer Section -->
+</body>
+<!--AOS.JS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="form.js"></script>
+
+</script>
+<script>
+  AOS.init({
+ delay: 200, // values from 0 to 3000, with step 50ms
+ duration: 1500, // values from 0 to 3000, with step 50ms
+ once: false, // whether animation should happen only once - while scrolling down
+});
+</script>
+
+<!-- Navigation Script -->
+
+
+</html>
